@@ -1,0 +1,123 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-image: url("https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg");
+  font-size: 35px;
+}
+
+header a {
+  margin-right: 40px;
+  color: white !important;
+}
+
+main {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/download.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main h1,
+main p {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+main p {
+  font-size: 30px;
+}
+
+main .bg-image {
+  background-image: url("https://pub-static.fotor.com/assets/bg/e9f1764c-0bdc-496a-be56-2aef89924b4b.jpg");
+  /* width: 200px;
+  height: 200px; */
+  background-position: center;
+}
+
+.gradient-container {
+  height: 50px;
+  background: linear-gradient(90deg, red 35%, green, blue, black);
+}
+
+.element-hover {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        transition-delay: 0.5s; */
+  transition: all 2s linear 0.5s;
+}
+
+.element-hover:hover {
+  width: 300px;
+  transform: scale(2, 2) rotate(25deg);
+  background: yellow;
+}
+
+.ball {
+  background-image: url("../images/ball.png");
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  border-radius: 50%;
+  position: relative;
+  /* animation: myBall 1s linear infinite; */
+  animation: myBallAdvanced 1s linear infinite;
+}
+
+@keyframes myBall {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -500px;
+  }
+}
+
+@keyframes myBallAdvanced {
+  0% {
+    top: 0px;
+    left: 0px;
+    transform: rotate(0deg) scale(1.1, 1.1);
+  }
+  10% {
+    top: -40px;
+    left: 40px;
+    transform: rotate(0deg) scale(1.2, 1.2);
+  }
+  20% {
+    top: -100px;
+    left: 60px;
+    transform: rotate(0deg) scale(1.3, 1.3);
+  }
+  40% {
+    top: -200px;
+    left: 100px;
+    transform: rotate(45deg) scale(1.4, 1.4);
+  }
+  50% {
+    top: -150px;
+    left: 140px;
+    transform: rotate(90deg) scale(1.3, 1.3);
+  }
+  70% {
+    top: -100px;
+    left: 160px;
+    transform: rotate(135deg) scale(1.2, 1.2);
+  }
+  80% {
+    top: -50px;
+    left: 180px;
+    transform: rotate(180deg) scale(1.1, 1.1);
+  }
+  100% {
+    top: 0px;
+    left: 200px;
+    transform: rotate(270deg) scale(1, 1);
+  }
+}
