@@ -1,0 +1,16 @@
+main {
+  height: 700px;
+  background-image: url(../images//bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  height: 100px;
+  background-image: url(https://img.freepik.com/free-vector/circles-background-dark-tones_60389-166.jpg);
+}
+
+a {
+  color: white;
+}
